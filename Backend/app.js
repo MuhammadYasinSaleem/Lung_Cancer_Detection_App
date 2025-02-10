@@ -4,6 +4,7 @@ import cors from 'cors'
 import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
 import { dbConnection } from "./database/dbConnection.js";
+import { errorMiddleware } from "./Middlewares/errorMiddleware.js";
 const app=express()
 config({
     path:"./config/config.env"
@@ -25,4 +26,5 @@ app.use(fileUpload({
 }))
 
 dbConnection()
+app.use(errorMiddleware)
 export default app;
