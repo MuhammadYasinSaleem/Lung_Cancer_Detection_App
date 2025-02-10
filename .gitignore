@@ -1,0 +1,64 @@
+# Ignore Node.js dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.example
+
+# Ignore log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+debug.log
+logs/
+*.log
+
+# Ignore build output
+dist/
+build/
+.out/
+.next/
+.vscode/
+.idea/
+
+# Ignore cache & temp files
+.cache/
+.temp/
+.DS_Store
+Thumbs.db
+
+# Ignore backend-specific files
+backend/node_modules/
+backend/.env
+backend/dist/
+backend/build/
+backend/logs/
+
+# Ignore frontend-specific files
+frontend/node_modules/
+frontend/.env
+frontend/dist/
+frontend/build/
+
+# Ignore dashboard-specific files
+dashboard/node_modules/
+dashboard/.env
+dashboard/dist/
+dashboard/build/
+
+# Ignore editor/OS files
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+.vscode/
+*.iml
+*.bak
