@@ -36,23 +36,23 @@ build/
 Thumbs.db
 
 # Ignore backend-specific files
-backend/node_modules/
-backend/.env
-backend/dist/
-backend/build/
-backend/logs/
+Backend/node_modules/
+Backend/.env
+Backend/dist/
+Backend/build/
+Backend/logs/
 
 # Ignore frontend-specific files
-frontend/node_modules/
-frontend/.env
-frontend/dist/
-frontend/build/
+Frontend/node_modules/
+Frontend/.env
+Frontend/dist/
+Frontend/build/
 
 # Ignore dashboard-specific files
-dashboard/node_modules/
-dashboard/.env
-dashboard/dist/
-dashboard/build/
+Dashboard/node_modules/
+Dashboard/.env
+Dashboard/dist/
+Dashboard/build/
 
 # Ignore editor/OS files
 *.swp
