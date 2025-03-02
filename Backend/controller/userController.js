@@ -132,6 +132,17 @@ res.status(200).cookie("adminToken","",{
   expires:new Date(Date.now())
 }).json({
   success:true,
-  message:"User logged out successfully"
+  message:"Admin logged out successfully"
 })
 })
+
+
+export const logoutPatient=catchAsyncErrors(async(req,res,next)=>{
+  res.status(200).cookie("patientToken","",{
+    httpOnly:true,
+    expires:new Date(Date.now())
+  }).json({
+    success:true,
+    message:"Patient logged out successfully"
+  })
+  })
