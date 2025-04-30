@@ -11,6 +11,7 @@ import { useContext } from "react";
 import { Context } from "./main";
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   const { isAuthenticated, setIsAuthenticated, setUser } =
@@ -43,8 +44,9 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
         </Routes>
-      </Router>
+      <Footer/>
       <ToastContainer position="top-center"/>
+      </Router>
     </>
   );
 };
