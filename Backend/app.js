@@ -6,6 +6,7 @@ import fileUpload from "express-fileupload";
 import { dbConnection } from "./database/dbConnection.js";
 import { errorMiddleware } from "./Middlewares/errorMiddleware.js";
 import UserRouter from "./router/userRouter.js";
+import morgan from "morgan";
 
 const app=express()
 config({
@@ -21,12 +22,15 @@ app.use(cors({
 app.use(cookieParser())
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
-
+app.use(morgan("common"))
 app.use(fileUpload({
     useTempFiles:true,
     tempFileDir:"/tmp/"
 }))
 
+app.get("/",(req,res)=>{
+    res.send("API is running")
+})
 app.use("/api/v1/user",UserRouter);
 dbConnection()
 app.use(errorMiddleware)
