@@ -62,3 +62,45 @@ Dashboard/build/
 .vscode/
 *.iml
 *.bak
+
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+
+# Environment variables or secret files
+*.env
+password.txt
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy cache
+.mypy_cache/
+
+# FastAPI specific (if any compiled or temp files generated)
+*.log
+
+# Model files
+*.keras
+*.h5
+*.pth
+*.pt
+
+# Git
+.gitignore
