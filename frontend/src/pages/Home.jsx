@@ -8,11 +8,18 @@ const Home = () => {
     <>
       <Hero
         title={
-          "Welcome to ZeeCare Medical Institute | Your Trusted Healthcare Provider"
+          <>
+            Diagnosense Smarter Detection Healthier Futures
+            <br />
+            <span className="text-gray-600">
+              AI-Powered Lung Cancer Detection You Can Trust
+            </span>
+          </>
         }
-        imageUrl={"/hero.png"}
+        imageUrl="/hero.png"
       />
-      <Biography imageUrl={"/about.png"} />
+
+      <Biography imageUrl={"/about.jpg"} />
       <Departments />
     </>
   );

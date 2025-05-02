@@ -1,6 +1,6 @@
 import React from "react";
 
-const Biography = ({imageUrl}) => {
+const Biography = ({ imageUrl }) => {
   return (
     <>
       <div className="container biography">
@@ -11,26 +11,25 @@ const Biography = ({imageUrl}) => {
           <p>Biography</p>
           <h3>Who We Are</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            blanditiis sequi aperiam. Debitis fugiat harum ex maxime illo
-            consequatur mollitia voluptatem omnis nihil nesciunt beatae esse
-            ipsam, sapiente totam aspernatur porro ducimus aperiam nisi. Ex
-            magnam voluptatum consectetur reprehenderit fugiat recusandae aut
-            similique illum natus velit, praesentium nostrum nesciunt. Deleniti,
-            nesciunt laboriosam totam iusto!
+            Diagnosense is an AI-powered lung cancer detection platform
+            developed with a mission to revolutionize early diagnosis through
+            technology. Born out of a passion for innovation in healthcare,
+            Diagnosense combines medical intelligence with machine learning to
+            provide fast, accurate, and accessible detection support.
           </p>
-          <p>We are all in 2024!</p>
-          <p>We are working on a MERN STACK PROJECT.</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            assumenda exercitationem accusamus sit repellendus quo optio dolorum
-            corporis corrupti. Quas similique vel minima veniam tenetur
-            obcaecati atque magni suscipit laboriosam! Veniam vitae minus nihil
-            cupiditate natus provident. Ex illum quasi pariatur odit nisi
-            voluptas illo qui ipsum mollitia. Libero, assumenda?
+            Our system leverages trained machine learning models to analyze
+            patient data and identify signs of lung cancer at an early
+            stage—when treatment is most effective. Diagnosense aims to bridge
+            the gap between timely diagnosis and accessible care, making
+            advanced diagnostics available to medical professionals, clinics,
+            and even patients in remote regions.
           </p>
-          <p>Lorem ipsum dolor sit amet!</p>
-          <p>Coding is fun!</p>
+          <p>
+            Whether you're a healthcare provider, researcher, or patient,
+            Diagnosense is your partner in smarter detection and healthier
+            futures.
+          </p>
         </div>
       </div>
     </>

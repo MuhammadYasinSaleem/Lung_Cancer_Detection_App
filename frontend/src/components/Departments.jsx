@@ -5,41 +5,36 @@ import "react-multi-carousel/lib/styles.css";
 const Departments = () => {
   const departmentsArray = [
     {
-      name: "Pediatrics",
-      imageUrl: "/departments/pedia.jpg",
+      imageUrl: "/departments/img1.jpg",
     },
     {
-      name: "Orthopedics",
-      imageUrl: "/departments/ortho.jpg",
+      imageUrl: "/departments/img2.jpg",
     },
     {
-      name: "Cardiology",
-      imageUrl: "/departments/cardio.jpg",
+      imageUrl: "/departments/img3.jpg",
     },
     {
-      name: "Neurology",
-      imageUrl: "/departments/neuro.jpg",
+      imageUrl: "/departments/img4.jpg",
     },
     {
-      name: "Oncology",
-      imageUrl: "/departments/onco.jpg",
+      imageUrl: "/departments/img5.jpg",
     },
-    {
-      name: "Radiology",
-      imageUrl: "/departments/radio.jpg",
-    },
-    {
-      name: "Physical Therapy",
-      imageUrl: "/departments/therapy.jpg",
-    },
-    {
-      name: "Dermatology",
-      imageUrl: "/departments/derma.jpg",
-    },
-    {
-      name: "ENT",
-      imageUrl: "/departments/ent.jpg",
-    },
+    // {
+    //   name: "Radiology",
+    //   imageUrl: "/departments/radio.jpg",
+    // },
+    // {
+    //   name: "Physical Therapy",
+    //   imageUrl: "/departments/therapy.jpg",
+    // },
+    // {
+    //   name: "Dermatology",
+    //   imageUrl: "/departments/derma.jpg",
+    // },
+    // {
+    //   name: "ENT",
+    //   imageUrl: "/departments/ent.jpg",
+    // },
   ];
 
   const responsive = {
@@ -68,7 +63,7 @@ const Departments = () => {
   return (
     <>
       <div className="container departments">
-        <h2>Departments</h2>
+      <h1 style={{ color: '#DA7B93',paddingBottom:'20px' }}>Human Lungs</h1>
         <Carousel
           responsive={responsive}
           removeArrowOnDeviceType={[
@@ -81,7 +76,6 @@ const Departments = () => {
           {departmentsArray.map((depart, index) => {
             return (
               <div key={index} className="card">
-                <div className="depart-name">{depart.name}</div>
                 <img src={depart.imageUrl} alt="Department" />
               </div>
             );
