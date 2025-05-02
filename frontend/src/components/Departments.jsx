@@ -63,7 +63,7 @@ const Departments = () => {
   return (
     <>
       <div className="container departments">
-      <h1 style={{ color: '#DA7B93',paddingBottom:'20px' }}>Human Lungs</h1>
+      <h1 style={{paddingBottom:'20px' }}>Human Lungs</h1>
         <Carousel
           responsive={responsive}
           removeArrowOnDeviceType={[
