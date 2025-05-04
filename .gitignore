@@ -43,16 +43,16 @@ Backend/build/
 Backend/logs/
 
 # Ignore frontend-specific files
-Frontend/node_modules/
-Frontend/.env
-Frontend/dist/
-Frontend/build/
+frontend/node_modules/
+frontend/.env
+frontend/dist/
+frontend/build/
 
 # Ignore dashboard-specific files
-Dashboard/node_modules/
-Dashboard/.env
-Dashboard/dist/
-Dashboard/build/
+dashboard/node_modules/
+dashboard/.env
+dashboard/dist/
+dashboard/build/
 
 # Ignore editor/OS files
 *.swp
