@@ -7,12 +7,12 @@ import Login from "./pages/Login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import { useContext } from "react";
-// import { Context } from "./main";
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { useSelector } from "react-redux";
+import Dashboard from "./pages/Dashboard";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const App = () => {
   const isLoggedin = useSelector((state) => state.auth.isLoggedin)
@@ -20,14 +20,19 @@ const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
+          <Route element={<><Navbar/><Footer/></>}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          </Route>
+          <Route element={<ProtectedRoute/>}>    
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Route>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
         <ToastContainer position="top-center" />
       </Router>
     </>
