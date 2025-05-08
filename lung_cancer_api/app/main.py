@@ -7,11 +7,19 @@ import pydicom
 import tempfile
 import shutil
 import os
+from fastapi.middleware.cors import CORSMiddleware
 
 from app.vit_attention import ViTAttention
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],  # frontend origin
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 @app.get("/")
 async def root():
     return {"message": "Server started running"}
