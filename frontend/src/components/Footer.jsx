@@ -29,8 +29,7 @@ const Footer = () => {
             <h4>Quick Links</h4>
             <ul>
               <Link to={"/"}>Home</Link>
-              <Link to={"/appointment"}>Appointment</Link>
-              <Link to={"/about"}>About</Link>
+              <Link to={"/dashboard"}>DashBoard</Link>
             </ul>
           </div>
           <div>
