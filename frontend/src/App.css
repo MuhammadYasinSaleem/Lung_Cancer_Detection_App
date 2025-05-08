@@ -668,6 +668,55 @@ nav li i {
   cursor: pointer;
 }
 
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(25px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-25px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.bounce-in-left,
+.bounce-in-right {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.bounce-in-left {
+  animation: bounceInLeft 3s ease;
+}
+
+.bounce-in-right {
+  animation: bounceInRight 3s ease;
+}
+
+
+
+
 /* Main Content Styles */
 .main-content {
   flex: 1;

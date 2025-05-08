@@ -20,19 +20,17 @@ const App = () => {
   return (
     <>
       <Router>
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
-          <Route element={<><Navbar/><Footer/></>}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          </Route>
           <Route element={<ProtectedRoute/>}>    
             <Route path="/dashboard" element={<Dashboard />} />
           </Route>
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
         <ToastContainer position="top-center" />
       </Router>
     </>
