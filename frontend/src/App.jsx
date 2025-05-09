@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import { useSelector } from "react-redux";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
+import NotFound from "./pages/Notfound";
 
 
 const App = () => {
@@ -20,16 +21,17 @@ const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route element={<ProtectedRoute/>}>    
+          {/* <Route element={<ProtectedRoute/>}>     */}
             <Route path="/dashboard" element={<Dashboard />} />
-          </Route>
+          {/* </Route> */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
         <ToastContainer position="top-center" />
       </Router>
     </>

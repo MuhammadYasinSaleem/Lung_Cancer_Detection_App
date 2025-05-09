@@ -1,109 +1,79 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Sidebar from "../components/SideBar";
 
 const Dashboard = () => {
-  // State management
-  const [activeTab, setActiveTab] = useState('upload');
-  const [file, setFile] = useState(null);
-  const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [result, setResult] = useState(null);
-  const [profile, setProfile] = useState({
-    name: '',
-    email: '',
-    age: '',
-    gender: '',
-    lastScan: ''
-  });
-  const [messages, setMessages] = useState([]);
-  const [newMessage, setNewMessage] = useState('');
+  const [showSidebar, setShowSidebar] = useState(true);
+  const [currentView, setCurrentView] = useState("Profile");
+  const [isOpen, setIsOpen] = useState(false);
 
-  // Event handlers - implement these as needed
-  const handleFileChange = (e) => {
-    // Implement file upload logic
-  };
-
-  const analyzeImage = () => {
-    // Implement image analysis logic
-  };
-
-  const sendMessage = () => {
-    // Implement chat functionality
-  };
-
-  // Tab content rendering
-  const renderContent = () => {
-    switch (activeTab) {
-      case 'profile':
+  const renderView = () => {
+    switch (currentView) {
+      case "Profile":
         return (
-          <div className="profile-content">
-            <h2>User Profile</h2>
-            {/* Profile content structure */}
+          <div>
+            <h1>Profile</h1>
           </div>
         );
-      case 'chat':
-        return (
-          <div className="chat-content">
-            <h2>Chat with Doctor</h2>
-            {/* Chat content structure */}
-          </div>
-        );
-      case 'upload':
+      case "AI Doctor":
+        return <div>AI Doctor</div>;
+      case "ChatBot":
+        return <div>ChatBot</div>;
       default:
-        return (
-          <div className="upload-content">
-            <h2>Upload CT Scan for Analysis</h2>
-            {/* Upload content structure */}
-          </div>
-        );
+        return <div>Invalid View</div>;
     }
   };
-
+    const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <div className="dashboard">
-      {/* Sidebar */}
-      <div className="sidebar">
-        <div className="logo">LungAI</div>
-        
-        <nav>
-          <ul>
-            <li 
-              className={activeTab === 'upload' ? 'active' : ''}
-              onClick={() => setActiveTab('upload')}
-            >
-              <i className="fas fa-upload"></i> Upload Scan
-            </li>
-            <li 
-              className={activeTab === 'profile' ? 'active' : ''}
-              onClick={() => setActiveTab('profile')}
-            >
-              <i className="fas fa-user"></i> Profile
-            </li>
-            <li 
-              className={activeTab === 'chat' ? 'active' : ''}
-              onClick={() => setActiveTab('chat')}
-            >
-              <i className="fas fa-comments"></i> Chat with Doctor
-            </li>
-          </ul>
-        </nav>
-        
-        <div className="sidebar-footer">
-          <div className="user-info">
-            <div className="user-avatar">{profile.name.charAt(0)}</div>
-            <div className="user-name">{profile.name}</div>
-          </div>
-          <button className="logout-btn">
-            <i className="fas fa-sign-out-alt"></i> Logout
-          </button>
+    <>
+      <div className="flex">
+        {/* Sidebar */}
+        <Sidebar
+          setShowSidebar={setShowSidebar}
+          showSidebar={showSidebar}
+          setCurrentView={setCurrentView}
+        />
+        {/* Main Content */}
+        <div className="main-container" onClick={toggleDropdown}>
+          {/* <DashboardNavbar
+            setShowSidebar={setShowSidebar}
+            navDropDown={navDropDown}
+            setNavDropDown={setNavDropDown}
+          /> */}
+          <main className="main-content">
+            {renderView()}{" "}
+            {/* Or renderAdminView(), depending on your actual role */}
+          </main>
         </div>
       </div>
-      
-      {/* Main Content Area */}
-      <div className="main-content">
-        {renderContent()}
-      </div>
-    </div>
+    </>
   );
 };
 
 export default Dashboard;
 
+// <div
+//         className="flex-1 flex flex-col bg-white md:ml-64 w-full"
+//         onClick={toggleDropdown}
+//       >
+//         {/* Navbar */}
+//         <DashboardNavbar setShowSidebar={setShowSidebar} navDropDown={navDropDown} setNavDropDown={setNavDropDown} />
+
+//         {/* Main Content Body */}
+//         <main className="flex-1 p-1 w-full">
+//           {user.user.role === "employee" ? (
+//             // <UserDashboard setShowSidebar={setShowSidebar} setNavDropDown={setNavDropDown}/>
+//             renderUserView()
+//           ) : user.user.role === "admin" ? (
+//             renderAdminView()
+//           ) : null}
+//         </main>
+//       </div>
+
+//   <div className="main-container" onClick={toggleDropdown}>
+//   <DashboardNavbar setShowSidebar={setShowSidebar} navDropDown={navDropDown} setNavDropDown={setNavDropDown} />
+//   <main className="main-content">
+//     {user.user.role === "employee" ? renderUserView() : user.user.role === "admin" ? renderAdminView() : null}
+//   </main>
+// </div>
