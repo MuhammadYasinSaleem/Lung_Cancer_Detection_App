@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "../components/SideBar";
 import Profile from "../Views/Profile";
+import AI_Doctor from "../Views/AI_Doctor";
 
 const Dashboard = () => {
   const [showSidebar, setShowSidebar] = useState(true);
@@ -12,7 +13,7 @@ const Dashboard = () => {
       case "Profile":
         return <Profile />;
       case "AI Doctor":
-        return <div>AI Doctor</div>;
+        return <AI_Doctor/>;
       case "ChatBot":
         return <div>ChatBot</div>;
       default:

@@ -9,51 +9,68 @@ const Profile = () => {
     nic: "4220123456789",
     dob: "1990-05-15T00:00:00.000Z",
     gender: "Male",
-    password: "SecurePass123",
     role: "Patient"
   };
 
   return (
-    <div className="profile-wrapper">
-      <h2 className="profile-heading">👤 User Profile</h2>
-      <form className="profile-form">
-        <div className="form-row">
-          <label>First Name</label>
-          <input type="text" value={user.firstName} disabled />
+    <div className="profile-container">
+      <div className="profile-header">
+        <div className="profile-avatar">
+          <span className="avatar-icon">👤</span>
         </div>
-        <div className="form-row">
-          <label>Last Name</label>
-          <input type="text" value={user.lastName} disabled />
-        </div>
-        <div className="form-row">
-          <label>Email</label>
-          <input type="email" value={user.email} disabled />
-        </div>
-        <div className="form-row">
-          <label>Phone</label>
-          <input type="text" value={user.phone} disabled />
-        </div>
-        <div className="form-row">
-          <label>NIC</label>
-          <input type="text" value={user.nic} disabled />
-        </div>
-        <div className="form-row">
-          <label>Date of Birth</label>
-          <input
-            type="text"
-            value={new Date(user.dob).toLocaleDateString()}
-            disabled
-          />
-        </div>
-        <div className="form-row">
-          <label>Gender</label>
-          <input type="text" value={user.gender} disabled />
-        </div>
-        <div className="form-row">
-          <label>Role</label>
-          <input type="text" value={user.role} disabled className="role-input" />
-        </div>
-      </form>
+        <h2 className="profile-title">User Profile</h2>
+        <p className="profile-subtitle">View and manage your account details</p>
+      </div>
+
+      <div className="profile-card">
+        <form className="profile-form">
+          <div className="form-grid">
+            <div className="form-group">
+              <label className="form-label">First Name</label>
+              <div className="form-input">{user.firstName}</div>
+            </div>
+
+            <div className="form-group">
+              <label className="form-label">Last Name</label>
+              <div className="form-input">{user.lastName}</div>
+            </div>
+
+            <div className="form-group">
+              <label className="form-label">Email</label>
+              <div className="form-input">{user.email}</div>
+            </div>
+
+            <div className="form-group">
+              <label className="form-label">Phone</label>
+              <div className="form-input">{user.phone}</div>
+            </div>
+
+            <div className="form-group">
+              <label className="form-label">NIC</label>
+              <div className="form-input">{user.nic}</div>
+            </div>
+
+            <div className="form-group">
+              <label className="form-label">Date of Birth</label>
+              <div className="form-input">
+                {new Date(user.dob).toLocaleDateString()}
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label className="form-label">Gender</label>
+              <div className="form-input">{user.gender}</div>
+            </div>
+
+            <div className="form-group">
+              <label className="form-label">Role</label>
+              <div className={`form-input role-badge ${user.role.toLowerCase()}`}>
+                {user.role}
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
