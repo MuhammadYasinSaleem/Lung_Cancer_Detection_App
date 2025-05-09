@@ -1,15 +1,18 @@
 import React from "react";
+import {useSelector} from "react-redux"
+
 
 const Profile = () => {
+    const userData = useSelector((state) => state.auth.user);
   const user = {
-    firstName: "David",
-    lastName: "Doe",
-    email: "david@gmail.com",
-    phone: "03123456789",
-    nic: "4220123456789",
-    dob: "1990-05-15T00:00:00.000Z",
-    gender: "Male",
-    role: "Patient"
+    firstName: userData.firstName,
+    lastName: userData.lastName,
+    email: userData.email,
+    phone: userData.phone,
+    nic: userData.nic,
+    dob: userData.dob,
+    gender: userData.gender,
+    role: userData.role
   };
 
   return (
