@@ -162,7 +162,8 @@ const Register = () => {
     nic: "",
     dob: "",
     gender: "",
-    password: ""
+    password: "",
+    role: "Patient",
   });
   const [loading, setLoading] = useState(false);
 
@@ -182,7 +183,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/v1/user/patient/register",
+        "http://localhost:4000/api/v1/user/register",
         formData,
         {
           withCredentials: true,

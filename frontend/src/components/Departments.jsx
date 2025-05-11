@@ -18,23 +18,7 @@ const Departments = () => {
     },
     {
       imageUrl: "/departments/img5.jpg",
-    },
-    // {
-    //   name: "Radiology",
-    //   imageUrl: "/departments/radio.jpg",
-    // },
-    // {
-    //   name: "Physical Therapy",
-    //   imageUrl: "/departments/therapy.jpg",
-    // },
-    // {
-    //   name: "Dermatology",
-    //   imageUrl: "/departments/derma.jpg",
-    // },
-    // {
-    //   name: "ENT",
-    //   imageUrl: "/departments/ent.jpg",
-    // },
+    }
   ];
 
   const responsive = {
