@@ -1875,3 +1875,60 @@ nav li i {
   align-items: center;
   text-align: center;
 }
+
+
+/* Document upload section in AI Doctor view */
+.download-report-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 10px 16px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.download-report-button:hover {
+  background-color: #2471a3;
+}
+
+.download-report-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.result-icon {
+  margin-right: 8px;
+}
+
+.success-icon {
+  color: #27ae60;
+}
+
+.error-icon {
+  color: #e74c3c;
+}
+
+/* Spinner animation for PDF generation */
+.download-report-button .spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
