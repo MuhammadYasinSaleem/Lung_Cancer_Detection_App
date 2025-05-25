@@ -5,14 +5,18 @@ const Footer = () => {
   const names = [
     {
       id: 1,
-      name: "Muhammad Yasin",
+      name: "Mr. Shahid Mehmood",
     },
     {
       id: 2,
-      name: "Muzammal Bilal",
+      name: "Muhammad Yasin",
     },
     {
       id: 3,
+      name: "Muzammal Bilal",
+    },
+    {
+      id: 4,
       name: "Muhammad Shahzaib",
     },
   ];

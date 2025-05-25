@@ -1932,3 +1932,21 @@ nav li i {
     transform: rotate(360deg);
   }
 }
+
+
+
+/* clear button.css */
+
+.my-button {
+  margin-left: auto;
+  font-size: 0.875rem; /* text-sm */
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  padding: 0.25rem 0.5rem; /* py-1 px-2 */
+  border-radius: 0.25rem; /* rounded */
+  transition: background-color 0.2s ease;
+}
+
+.my-button:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
