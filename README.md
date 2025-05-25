@@ -69,3 +69,19 @@ cd Backend
 npm install
 node --watch server.js
 ```
+
+## 💻 Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## 🧪 Backend Setup
+
+```bash
+cd lung_cancer_api
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
