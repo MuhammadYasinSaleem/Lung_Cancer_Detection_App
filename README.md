@@ -5,7 +5,6 @@
 ![Express](https://img.shields.io/badge/API-Express.js-000000?logo=express)
 ![MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248?logo=mongodb)
 ![Python](https://img.shields.io/badge/AI-Python-3776AB?logo=python)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 > ✅ Final Year Project | 🏥 Healthcare + 🧠 Artificial Intelligence
 
@@ -29,14 +28,16 @@
 
 ## 🛠️ Tech Stack
 
-| Layer        | Technologies Used                            |
-|-------------|-----------------------------------------------|
-| Frontend    | React.js ⚛️, Redux Toolkit, CSS       |
-| Backend     | FastAPI ⚡, Express.js 🚀                      |
-| Database    | MongoDB 🍃                                     |
-| AI Model    | Python 🐍, PyTorch 🧠, OpenCV, Transformers 🔎 |
-| Auth        | JWT 🔐                                         |
-| Dev Tools   | GitHub 🐙, VS Code, Postman |
+| Layer         | Technologies Used                                              |
+| ------------- | -------------------------------------------------------------- |
+| **Frontend**  | React.js ⚛️, Redux Toolkit, Tailwind CSS                       |
+| **Backend**   | FastAPI ⚡, Express.js 🚀                                       |
+| **Database**  | MongoDB 🍃                                                     |
+| **AI Model**  | Python 🐍, PyTorch 🧠, OpenCV, Transformers 🔎                 |
+| **Chatbot**   | RAG (Retrieval-Augmented Generation), LangChain 🧠, FastAPI 🤖 |
+| **Auth**      | JWT 🔐                                                         |
+| **Dev Tools** | GitHub 🐙, VS Code, Postman, Docker (Optional)                 |
+
 
 ---
 
@@ -48,3 +49,12 @@
 - 🔒 JWT-secured login and registration
 - 🌐 Cross-platform responsive design
 
+---
+
+## 📦 Installation & Setup
+
+### 📁 Clone the Repository
+
+```bash
+git clone https://github.com/MuhammadYasinSaleem/Lung_Cancer_Detection_App.git
+cd Lung_Cancer_Detection_App
