@@ -10,7 +10,7 @@
 
 ## 👥 Team
 
-- 👨‍💻 [Muhammad Yasin Saleem](https://github.com/MuhammadYasinSaleem)
+- 👨‍💻 [Muhammad Yasin](https://github.com/MuhammadYasinSaleem)
 - 👨‍💻 [Shahzaib Khalid](https://github.com/M-Shahzaib-Khalid)
 - 👨‍💻 [Muzammal Bilal](https://github.com/MuzammalBilal)
 
@@ -58,6 +58,23 @@
 - 🌐 Cross-platform responsive design
 
 ---
+
+
+## 🖼️ Project Screenshots
+
+### 🏠 Home Page
+![Home Page](/home.png)
+
+### 📊 Interactive Dashboard
+![Dashboard](/profile.png)
+
+### 🔍 Lung Cancer Prediction – CT Scan Upload
+![Image Upload Section](/AI_Doctor.png)
+![CT Scan Prediction](/result.png)
+
+### 🤖 RAG-based Chatbot
+![Chatbot](/chatbot.png)
+
 
 ## 📦 Installation & Setup
 
