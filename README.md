@@ -122,7 +122,7 @@ npm install
 npm run dev
 ```
 
-## 🧪 Backend Setup (Fastapi MOdel)
+## 🧪 Backend Setup (Fastapi Model)
 
 ```bash
 cd lung_cancer_api
