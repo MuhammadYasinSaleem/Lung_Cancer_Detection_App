@@ -8,6 +8,14 @@
 
 > ✅ Final Year Project | 🏥 Healthcare + 🧠 Artificial Intelligence
 
+## 👥 Team
+
+- 👨‍💻 [Muhammad Yasin Saleem](https://github.com/MuhammadYasinSaleem)
+- 👨‍💻 [Shahzaib Khalid](https://github.com/M-Shahzaib-Khalid)
+- 👨‍💻 [Muzammal Bilal](https://github.com/MuzammalBilal)
+
+
+
 ## 🚀 Overview
 
 **DiagnoSense** is a full-stack, AI-powered web platform for **early lung cancer detection** and **awareness building**. It leverages cutting-edge **deep learning models** and **natural language processing** to assist users in understanding their lung health through:
@@ -80,7 +88,9 @@ MONGO_URI= your_mongodb_connection_string
 FRONTEND_URL= your_url
 
 JWT_SECRET_KEY= your_secret_key
+
 JWT_EXPIRES=
+
 COOKIE_EXPIRE=
 
 
