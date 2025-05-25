@@ -104,5 +104,4 @@ Thumbs.db
 *.pth
 *.pt
 
-# Git
-.gitignore
+
