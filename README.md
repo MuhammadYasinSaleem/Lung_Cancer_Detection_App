@@ -58,6 +58,7 @@
 ```bash
 git clone https://github.com/MuhammadYasinSaleem/Lung_Cancer_Detection_App.git
 cd Lung_Cancer_Detection_App
+```
 
 ## 🧪 Backend (Express)
 
@@ -67,3 +68,4 @@ cd Lung_Cancer_Detection_App
 cd Backend
 npm install
 node --watch server.js
+```
