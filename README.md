@@ -69,6 +69,20 @@ cd Backend
 npm install
 node --watch server.js
 ```
+### 🔐 Create .env File
+
+Create a file named config.env in /Backend/config/ and add:
+
+PORT= your_port_no
+
+MONGO_URI= your_mongodb_connection_string
+
+FRONTEND_URL= your_url
+
+JWT_SECRET_KEY= your_secret_key
+JWT_EXPIRES=
+COOKIE_EXPIRE=
+
 
 ## 💻 Frontend Setup
 
