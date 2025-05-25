@@ -35,7 +35,6 @@ transformers/
 # Data files
 *.csv
 *.tsv
-*.txt
 *.log
 *.db
 *.sqlite
