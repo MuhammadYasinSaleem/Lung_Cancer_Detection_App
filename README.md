@@ -72,6 +72,9 @@
 ![Image Upload Section](/AI_Doctor.png)
 ![CT Scan Prediction](/result.png)
 
+### 🔍 CT Scan Report
+![Report Generated](/report.png)
+
 ### 🤖 RAG-based Chatbot
 ![Chatbot](/chatbot.png)
 
