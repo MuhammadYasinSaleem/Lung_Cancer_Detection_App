@@ -12,7 +12,7 @@
 
 - 👨‍💻 [Muhammad Yasin](https://github.com/MuhammadYasinSaleem)
 - 👨‍💻 [Shahzaib Khalid](https://github.com/M-Shahzaib-Khalid)
-- 👨‍💻 [Muzammal Bilal](https://github.com/MuzammalBilal)
+- 👨‍💻 [Muzammal Bilal](https://github.com/Muzammal-Bilal)
 
 
 
